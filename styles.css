@@ -106,6 +106,7 @@ section {
 
 }
 
+
 main > section > div {
     text-align: center;
 
@@ -203,6 +204,15 @@ main > section > div > button {
 
 }
 
+.card {
+
+    padding-bottom: 50px;
+
+
+
+}
+
+
 .card-heading {
 
     padding-bottom: 100px;
@@ -232,8 +242,15 @@ main > section > div > button {
 .card-body {
     text-align: left;
 }
+
+#Education {
+    height: auto;
+
+
+}
 #Education > h1 {
     padding-left: 35px;
     padding-top: 50px;
 
 }
+
