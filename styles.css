@@ -1,7 +1,7 @@
 * {
 
     margin: 0;
-    font-size: 16px;
+    font-size: 1.25vmax;
 
 }
 
@@ -10,7 +10,7 @@
 
 
 html, body, main{
-    height: 100%
+    background: linear-gradient(0deg,  rgba(18,96,117,1) 0%, rgb(0, 47, 61) 100%);
 
 }
 
@@ -18,12 +18,18 @@ body {
     font-family: poppins;
     /*background: rgb(2,0,36);*/
     /*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(18,96,117,1) 1%, rgba(0,23,30,1) 99%, rgb(0, 0, 0) 100%);*/
-    background: repeating-linear-gradient(0deg,  rgba(18,96,117,1) 0%, rgb(0, 47, 61) 99%, rgb(17, 17, 17) 100%);
     color: white;
+    
 
 
 
 }
+
+.icon {
+    display: inline-block;
+
+}
+
 
 header > div {
     font-family: Dancing Script;
@@ -54,6 +60,11 @@ nav > ul{
 
 .nav-list {
     display: none;
+
+}
+
+.nav-list-responsive {
+    display: inline;
 
 }
 
@@ -97,7 +108,8 @@ nav > ul > li {
 section {
 
     height: 100vh;
-    background: repeating-linear-gradient(0deg,  rgba(18,96,117,1) 0%, rgb(2, 50, 65) 100%, rgb(17, 17, 17) 100%);
+    
+    
 
 
 }
@@ -147,6 +159,11 @@ section:not(:nth-child(1)){
 #main {
 
     text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
+ 
 }
 
 #main h2 {
@@ -160,6 +177,8 @@ section:not(:nth-child(1)){
     font-size: 3em;
 
 }
+
+
 
 #Education {
     height: auto;
@@ -225,9 +244,17 @@ section:not(:nth-child(1)){
     text-align: left;
     padding-bottom: 4em;
 }
+.test {
+
+    width:100vw;
+    
+    
+    
+    
+}
 
 
-@media only screen and (min-width: 1350px) {
+@media only screen and (min-width: 1200px) {
     
 .icon{
 
@@ -247,7 +274,6 @@ section:not(:nth-child(1)){
 
 
 
-
 .nav-list-responsive {
     
     list-style: none;
@@ -263,47 +289,34 @@ body {
     font-family: poppins;
     /*background: rgb(2,0,36);*/
     /*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(18,96,117,1) 1%, rgba(0,23,30,1) 99%, rgb(0, 0, 0) 100%);*/
-    background: repeating-linear-gradient(0deg,  rgba(18,96,117,1) 0%, rgb(0, 47, 61) 99%, rgb(17, 17, 17) 100%);
+    /*background: repeating-linear-gradient(0deg,  rgba(18,96,117,1) 0%, rgb(0, 47, 61) 99%, rgb(17, 17, 17) 100%);*/
     color: white;
-
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    --test: 100vw;
+    
 
 
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    
-    
-    
-
-    
 
 
+.content-area {
+    width: 1200px
 }
 header > div {
     font-family: Dancing Script;
     font-weight: 600;
     font-size: 28px;
-    margin-left: 300px;
-    
-}
-header > nav {
-
-    margin-right: 300px;
     
     
 }
 
-header > nav, div {
-    padding: 20px 20px 20px 20px;
-    
-    
-    
 
-}
+
 
 nav a:visited,
 nav a:link {
@@ -337,6 +350,7 @@ nav > ul > li {
     display: flex;
     align-items: center;
     justify-content: center;
+ 
 }
 
 .row {
@@ -346,14 +360,32 @@ nav > ul > li {
 
 section {
     height: 100vh;
-    background: repeating-linear-gradient(0deg,  rgba(18,96,117,1) 0%, rgb(2, 50, 65) 100%, rgb(17, 17, 17) 100%);
-    padding-left: 300px;
-    padding-right:300px;
+    
+    
+    
+    
+
     
     
     
 
 }
+
+.row {
+    position: relative;
+    top: 35%;
+
+}
+
+#main {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 
 
 main > section > div {
@@ -420,7 +452,7 @@ main > section > div > button {
     text-underline-offset: 5px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
-    font-size: 42px;
+    font-size: 2vmax;
 
 }
 
@@ -444,7 +476,7 @@ main > section > div > button {
 #About-me > h2 {
 
     margin-bottom: 25px;
-    font-size: 42px;
+    font-size: 2vmax;
 
 
 }
@@ -452,7 +484,7 @@ main > section > div > button {
 #About-me > P {
 
     margin-bottom: 50px;
-    font-size: 21px;
+    font-size: 1vmax;
 
 
 }
@@ -496,15 +528,34 @@ main > section > div > button {
     text-align: left;
 }
 
+section {
+    height: 100vh;
+    
+    
+    
+    
+    
+      
+
+}
+
 #Education {
     height: auto;
 
 
 }
-#Education > h1 {
-    padding-left: 35px;
-    padding-top: 50px;
+nav {
+    display: inline-block;
+    float: right;
 
+}
+.test {
+
+    position: absolute;
+    left:0%
+    
+    
 }
 
 }
+

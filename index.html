@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="styles.css"  type="text/css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Poppins|Dancing+Script">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
+    <div class=content-area>
     <header>
         <div class="LeftNavText">Stephen Ramos</div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        <nav class="nav-list">
             <ul>
                 <li><a href="#main">Main</a></li>
                 <li><a href="#About-me">About Me</a></li>
@@ -22,27 +27,31 @@
             </ul>
         </nav>
 
+
     </header>
     <main>
-
-        <section class=flex-container id="main">
+        <div class="flex-container">
+        <section id="main">
         <div class=row>
             <h2>Hello! I'm</h2>
             <h1>Stephen</h1>
             <h2>Welcome to my Cloud Journey</h2>
-            <button class=button>Learn More</button>
+            <button class=button onclick="jumpToAboutMe()">Learn More</button>
         </div>
+    </div>
 
         </section>
+        <hr class="test">
 
         <section id="About-me">
             <h1 class=fancy-heading>About Me</h1>
             <h2>IT Professional, Cloud Enthusiast</h2>
-            <p>My name is Stephen Ramos, and I currently work as a Service Desk analyst <br>at a growing healthcare MSP where i work with various virtualized Windows<br> Servers and write
+            <p>My name is Stephen Ramos, and I currently work as a Service Desk analyst at a growing healthcare MSP where i work with various virtualized Windows Servers and write
                 automation to make things a little easier.</p>
-            <p>I am finishing my Bachelors in Software Development next semester<br> and strive to apply my knowledge towards automation in the Cloud.</p>
+            <p>I am finishing my Bachelors in Software Development next semester and strive to apply my knowledge towards automation in the Cloud.</p>
             <p>Thank you for taking a look at my resume.</p>
         </section>
+        <hr class="test">
 
         <section id="Education">
             <h1 class=fancy-heading>Education</h1>
@@ -56,8 +65,10 @@
                 <p>Holyoke, MA</p>
                 <p>May 2021 - Present</p>
             </div>
+
             
             </div>
+            
             <div class=card-body>
                 <p>Written scripts using PowerShell to automate onboarding and termination of personnel in a 
                     major mental health organization,  including verifying last used times in RMM. <br> 
@@ -171,6 +182,8 @@
         </div>
 
         </section>
+        <hr class="test">
+       
         <section id=test>
 
         </section>
@@ -179,6 +192,8 @@
 
     </main>
 
-
+</div>
+<script src="source.js"></script>
 </body>
+
 </html>
