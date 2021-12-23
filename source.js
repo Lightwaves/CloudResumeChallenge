@@ -30,7 +30,7 @@ async function addPageCount(){
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(visitor)
     };
-    const postResp = await fetch("https://api.lightwaves.me", responseOptions);
+    const postResp = await fetch("https://api.lightwaves.me/api/visitor", responseOptions);
     const countObj = await fetchCount();
     console.log(countObj["count"])
     const footer = document.querySelector("#footer");
